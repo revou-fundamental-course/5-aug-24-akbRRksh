@@ -13,12 +13,11 @@ h3 {
 }
 
 .result h3 {
-    transform: translateY(-40%);
-    transform: translateX(33%);
+    text-align: center;
 }
 
 .result h1 {
-    transform: translateX(44%);
+    text-align: center;
 }
 
 th, td {
@@ -31,13 +30,17 @@ th, td {
     text-align: justify;
     background-color: white;
     margin: 0 50px 0 50px;
+    border-radius: 2px;
 }
 
 .input-container {
     padding: 15px;
     background-color: rgb(153, 154, 155);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .input-section, .result-section {
@@ -63,9 +66,9 @@ input[type=number] {
 .download {
     height: 30px;
     background: rgb(124, 122, 122);
-    border: none;
-    outline: none;
     border-radius: 40px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(2px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     cursor: pointer;
     font-size: 13px;
@@ -76,15 +79,16 @@ input[type=number] {
 .calculate, .reset {
     height: 30px;
     background: rgb(124, 122, 122);
-    border: none;
-    outline: none;
     border-radius: 40px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(2px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     cursor: pointer;
     font-size: 13px;
     color: black;
     font-weight: 600;
     margin: 10px 0 5px 0;
+    margin-right: 8px;
 }
 
 
@@ -94,9 +98,21 @@ input[type=number] {
 
 .result {
     background-color: rgb(153, 154, 155);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     padding: 20px;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 7px;
+}
+
+#bmi-description {
+    text-align: center;
+    font-weight: 600;
+}
+
+.assets{
+    text-align: center;
 }
 
 .diseases {
@@ -106,9 +122,23 @@ input[type=number] {
 .consult {
     height: 30px;
     background: rgb(124, 122, 122);
-    border: none;
-    outline: none;
     border-radius: 40px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+    margin: 15px 8px 15px 0;
+}
+
+.regist {
+    height: 30px;
+    background: rgb(124, 122, 122);
+    border-radius: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     cursor: pointer;
     font-size: 13px;
@@ -117,15 +147,24 @@ input[type=number] {
     margin-top: 20px;
 }
 
-.regist {
-    height: 30px;
-    background: white;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+img {
+    width: 130px;
+    height: 65px;
     cursor: pointer;
-    font-size: 13px;
-    color: black;
-    font-weight: 600;
-    margin-top: 20px;
+    transform: translateX(165%);
+}
+
+footer{
+    background-color: rgb(77, 79, 82, .900);
+    height: 50px;
+    width: 1483px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    border-top: 4px solid black;
+}
+
+.footer-name {
+    transform: translateY(50%);
 }
