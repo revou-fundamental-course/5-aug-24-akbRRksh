@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     background-color: rgb(167, 160, 160);
     box-sizing: border-box;
+    background-image: linear-gradient(to top, #7f8585 0%, #2b2b2c 100%);
 }
 
 h3 {
@@ -167,4 +168,10 @@ footer{
 
 .footer-name {
     transform: translateY(50%);
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
 }

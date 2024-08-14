@@ -4,7 +4,10 @@ function calculateBMI() {
     const bmi = weight / (height * height);
     
     let category, description;
-    if (bmi < 18.5) {
+    if (weight == '' || height == '') {
+        alert('value berat badan kosong');
+    }
+    else if (bmi < 18.5) {
         category = "Kurang";
         description = "Anda berada dalam kategori underweight atau berat badan kurang.";
     } else if (bmi >= 18.5 && bmi < 25) {
@@ -13,7 +16,7 @@ function calculateBMI() {
     } else if (bmi >= 25 && bmi < 30) {
         category = "Lebih";
         description = "Anda berada dalam kategori overweight atau berat badan berlebih.";
-    } else {
+    } else if (bmi >= 30 && bmi < 1000) {
         category = "Obesitas";
         description = "Anda berada dalam kategori obesitas.";
     }
